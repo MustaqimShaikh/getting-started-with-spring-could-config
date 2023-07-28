@@ -1,0 +1,20 @@
+server:
+  port: 8888
+encrypt:
+  key: ABCDEFGHIJKLMNOPQRSTUVWXYZ
+spring:
+  security:
+    user:
+      name: admin
+      password: password
+  cloud:
+    config:
+      server:
+#        encrypt:
+#          enabled: false
+        git:
+            uri: https://github.com/MustaqimShaikh/product-couldconfig
+            search-paths:
+              - product-service-config-develop*
+              -
+
